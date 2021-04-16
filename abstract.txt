@@ -1,0 +1,23 @@
+  Topic : Citizen Travel History Tracker
+  Submitted by: Srinithi.K [18352053]
+   
+  Abstract:                             
+                Citizen Registration Form is designed exclusively for the citizens who returned back to our country from abroad in last six months.
+                They are advised to fill this form voluntarily for easier identification of Covid19 cases to avoid further spread of pandemic 
+                 and to help the government to keep track of all citizens travel history.  If they are in need of Medical Assitance 
+                 it will be provided immediately.
+
+Files included,
+
+Sample.html- contains the login form and act as homepage.
+Myform.html-contains the Registration form.
+Style.css - external stylesheet used for designing  myform.html webpage.
+Connection.php- used to check the database connectivity
+Myformdb.php- Contains the code needed for Registration form to connect with database.
+logindb.php- used to fetch the data from database to check for valid email id  entered to let the user sign in.
+Welcome.php- Just the welcome screen appears and some guidelines for self quarantine is displayed.
+
+
+
+
+    

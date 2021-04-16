@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<head><title>Registration form</title>
+<script>
+function validate() {
+ var password = document.forms["myformdb"]["passno"].value;
+ var cpaasword = document.forms["myformdb"]["cpassword"].value;
+
+  if (password != cpassword) 
+  {
+    alert("Make sure both password should be same");
+    return false;
+  }
+ }
+ </script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+<h1 style="font-size: 40px;word-break: break-all;background-color:black;color:white;padding:5px;"><blockquote><center>Citizen Travel History Tracker</center></blockquote></h1> 
+</header>
+<body> 
+<div id="container">
+<form name="myform" method="post" action="myformdb.php" Autocomplete="off" enctype="multipart/form-data">
+<center><table border=10 width =100% height=700>
+ <tr bgcolor=" #004d99" font-size="20px" font-family="comics" padding-right:"15px"><td align="center">REGISTRATION FORM</td></tr>
+ <tr><td>Name: <input type="text" name="name" placeholder="Enter name" pattern="[a-z A-Z]*" required></td></tr>
+<tr><td>E-mail: <input type="email" name="email" placeholder="Enter email" required></td></tr>
+
+<tr><td>Password <input type="password" name="password" maxlength="8" placeholder="Enter password" required></td></tr>
+<tr><td>Confirm Password:<input type="password" name="cpassword" maxlength="8" required></td></tr>
+<tr><td>Contact Number:<input type="tel" name="phno" maxlength="10" placeholder="Enter contact no" maxlength="10"required></td></tr>
+<tr><td>Aadhaar Number:<input type="tel"  name="Adno" placeholder="Enter Aadhaar number" maxlength="12"required></td></tr><br>
+<tr><td>Passport Number:<input type="tel" name="passno" placeholder="Enter Passport number" maxlength="9"required></td></tr><br>
+<tr><td>Gender:<br>
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="other">Others
+</td></tr>
+
+<tr><td><label for ="desc">Address:</label></td><tr><td><textarea name="address" id="desc" rows="5" cols="30"></textarea></td></tr>
+ <tr>
+    <td><b>Please Answer the Questions below to help us track COVID19 infected persons:</b><br>
+    <br>
+		<input type="checkbox" value="symptom" name="hobb[]"/>Have Symptoms like fever,cough,difficulty in breathing<br>
+		<input type="checkbox" value="transport" name="hobb[]"/>Used public transport after returning to INDIA<br>
+		<input type="checkbox" value="delhi" name="hobb[]"/>Attended Delhi Nizamuddin congregation<br>
+	</td>
+  </tr>
+<tr>
+    <td height="23">Do you need any Medical Assitance?
+	 <input type="radio" name="medical" value="yes"/>YES
+	<input type="radio" name="medical" value="no"/>NO
+	</td>
+  </tr>
+</table>
+<input type="image" src="submit1.png" name="submit"></button>
+</div>
+</body>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr style="color:brown"/>
+<div style="background-color:black;color:white;padding:05px;">
+<center><strong><h3 style="font-style:verdana;color:white;">Website Developed by Srinithi Krishna &copy;2020||All Rights Reserved</h3></strong></center>
+</div>
+
+</html>
